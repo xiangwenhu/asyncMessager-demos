@@ -1,4 +1,4 @@
-import { type BaseReqData } from "async-messager"
+import { type BaseReqData } from "async-messenger"
 
 import EventEmitter from "events";
 

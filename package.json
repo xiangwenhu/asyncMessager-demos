@@ -1,13 +1,13 @@
 {
-  "name": "asyncmessager-test",
+  "name": "async-messenger-demos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "async-messager": "file:D:/projects/github-my/asyncMessager/async-messager-0.0.1-t3.tgz"
+    "async-messenger": "file:D:/projects/github-my/asyncMessager/async-messenger-0.0.1-t6.tgz"
   },
   "devDependencies": {
     "@types/node": "^16.9.6",

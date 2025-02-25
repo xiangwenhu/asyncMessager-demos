@@ -1,9 +1,9 @@
-import { BaseAsyncMessager, BaseReqData, GlobalReqOptions } from "async-messager";
+import { BaseAsyncMessenger, BaseReqData, GlobalReqOptions } from "async-messenger";
 import emitter from "./events";
 
 
 
-class EmitterAsyncMessager extends BaseAsyncMessager {
+class EmitterAsyncMessager extends BaseAsyncMessenger {
     // eslint-disable-next-line no-useless-constructor
     constructor(options: GlobalReqOptions = {}) {
         super(options);

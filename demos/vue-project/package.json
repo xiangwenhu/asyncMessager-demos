@@ -11,7 +11,7 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
-    "async-messager": "file:D:/projects/github-my/asyncMessager/async-messager-0.0.1-t3.tgz",
+    "async-messenger": "file:D:/projects/github-my/asyncMessager/async-messenger-0.0.1-t6.tgz",
     "events": "^3.3.0",
     "vue": "^3.4.29"
   },

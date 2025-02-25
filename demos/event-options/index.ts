@@ -1,15 +1,15 @@
-import messager from "./messager";
+import messenger from "./messenger";
 
-messager.subscribe();
+messenger.subscribe();
 
 
-messager.invoke({
+messenger.invoke({
     method: "cccc",
     data: 111
 }).then(res => console.log("res:", res))
 
 
-messager.invoke({
+messenger.invoke({
     method: "oneway",
     data: 111
 }, {
@@ -17,7 +17,7 @@ messager.invoke({
 }).then(res => console.log("oneway request res:", res))
 
 
-messager.on("continuous-event", function onEvent(data) {
+messenger.on("continuous-event", function onEvent(data) {
     console.log("continuous-event:", data);
 })
 

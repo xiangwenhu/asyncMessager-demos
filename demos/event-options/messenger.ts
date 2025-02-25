@@ -1,8 +1,8 @@
-import { BaseAsyncMessager, BaseReqData } from "async-messager";
+import { BaseAsyncMessenger, BaseReqData } from "async-messenger";
 import emitter from "./events";
 
-// 初始化异步Messager
-const messager = new BaseAsyncMessager({
+// messenger
+const messenger = new BaseAsyncMessenger({
     // logUnhandledEvent: false,
     subscribe(onMessage) {
         emitter.on("message", onMessage as any);
@@ -16,4 +16,4 @@ const messager = new BaseAsyncMessager({
     }
 });
 
-export default messager
+export default messenger

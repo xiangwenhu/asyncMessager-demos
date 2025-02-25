@@ -1,16 +1,16 @@
-import emitterAsyncMessager from "./messager";
+import emitterAsyncMessenger from "./messenger";
 
-emitterAsyncMessager.subscribe();
+emitterAsyncMessenger.subscribe();
 
 
 // key相同，返回相同
-emitterAsyncMessager.invoke({
+emitterAsyncMessenger.invoke({
     method: "method1",
     data: "data2",
     requestId: "key2"
 }).then(res=>console.log("res1_key2", res));
 
-emitterAsyncMessager.invoke({
+emitterAsyncMessenger.invoke({
     method: "method1",
     data: "data1",
     requestId: "key1"

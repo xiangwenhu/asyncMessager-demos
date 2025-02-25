@@ -1,10 +1,10 @@
-import { BaseAsyncMessager, type BaseReqData, type GlobalReqOptions } from "async-messager";
+import { BaseAsyncMessenger, BaseReqData, GlobalReqOptions } from "async-messenger";
 import emitter from "./events";
 
 type RequestData  = BaseReqData;
 type ResponseData = RequestData;
 
-class EmitterAsyncMessager extends BaseAsyncMessager {
+class EmitterAsyncMessager extends BaseAsyncMessenger {
     constructor(options: GlobalReqOptions = {}) {
         super(options);
     }
