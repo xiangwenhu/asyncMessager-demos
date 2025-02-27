@@ -7,7 +7,7 @@
   "scripts": {
   },
   "dependencies": {
-    "async-messenger": "file:D:/projects/github-my/asyncMessager/async-messenger-0.0.1-t6.tgz"
+    "async-messenger-js": "^0.0.4"
   },
   "devDependencies": {
     "@types/node": "^16.9.6",

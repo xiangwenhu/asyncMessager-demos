@@ -17,7 +17,7 @@ messenger.invoke({
 }).then(res => console.log("oneway request res:", res))
 
 
-messenger.on("continuous-event", function onEvent(data) {
+messenger.addListener("continuous-event", function onEvent(data) {
     console.log("continuous-event:", data);
 })
 

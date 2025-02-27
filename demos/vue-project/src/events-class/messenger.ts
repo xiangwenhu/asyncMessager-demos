@@ -1,4 +1,4 @@
-import { BaseAsyncMessenger, type BaseReqData, type GlobalReqOptions } from "async-messenger";
+import { BaseAsyncMessenger, type BaseReqData, type GlobalReqOptions } from "async-messenger-js";
 import emitter from "./events";
 
 type RequestData  = BaseReqData;

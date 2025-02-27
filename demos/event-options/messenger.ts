@@ -1,4 +1,4 @@
-import { BaseAsyncMessenger, BaseReqData } from "async-messenger";
+import { BaseAsyncMessenger, BaseReqData } from "async-messenger-js";
 import emitter from "./events";
 
 // messenger

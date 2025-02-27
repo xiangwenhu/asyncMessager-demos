@@ -1,4 +1,4 @@
-import { BaseReqData } from "async-messenger";
+import { BaseReqData } from "async-messenger-js";
 import EventEmitter from "events";
 
 const emitter = new EventEmitter();

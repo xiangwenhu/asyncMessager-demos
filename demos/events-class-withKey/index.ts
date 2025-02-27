@@ -1,6 +1,6 @@
 import emitterAsyncMessenger from "./messenger";
 
-emitterAsyncMessenger.subscribe();
+emitterAsyncMessenger.activate();
 
 
 // key相同，返回相同
