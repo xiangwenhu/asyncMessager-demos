@@ -1,14 +1,11 @@
-import { BaseAsyncMessenger, BaseReqData, GlobalReqOptions } from "async-messenger-js";
+import { BaseAsyncMessenger, BaseReqData, BaseResData, GlobalReqOptions, listener } from "async-messenger-js";
 import emitter from "./events";
 
-type RequestData  = BaseReqData;
-type ResponseData = RequestData;
 
 class EmitterAsyncMessenger extends BaseAsyncMessenger {
     constructor(options: GlobalReqOptions = {}) {
         super(options);
     }
-
     override subscribe() {
         console.log("WebViewBridge: subscribe");
         emitter.on("message", this.onMessage);
@@ -17,8 +14,17 @@ class EmitterAsyncMessenger extends BaseAsyncMessenger {
         }
     }
 
-    protected request(data: RequestData) {
+    protected request(data: BaseReqData) {
         emitter.emit("message-request", data);
+    }
+
+    /**
+     * 被动监听
+     * @param data 
+     */
+    @listener({ type: "continuous-event" })
+    continuousEvent(data: BaseResData) {
+        console.log("continuous-event:", data)
     }
 }
 

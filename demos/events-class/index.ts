@@ -1,7 +1,6 @@
 import messenger from "./messenger";
 
-messenger.subscribe();
-
+messenger.activate();
 
 messenger.invoke({
     method: "cccc",
@@ -16,8 +15,4 @@ messenger.invoke({
     sendOnly: true,
 }).then(res => console.log("oneway request res:", res))
 
-
-messenger.addListener("continuous-event", function onEvent(data) {
-    console.log("continuous-event:", data);
-})
 
